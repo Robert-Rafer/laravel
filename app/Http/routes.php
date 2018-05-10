@@ -11,9 +11,13 @@
 |
 */
 
-Route::get('/asdf/{id}', 'Hello@show');
+
 
 Route::get('blade', function () {
     $drinks = array('Vodka','Gin','Brandy');
     return view('page',array('name' => 'The Raven','day' => 'Friday','drinks' => $drinks));
+});
+
+Route::get('/', function(){
+	return view('welcome');
 });

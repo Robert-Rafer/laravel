@@ -10,7 +10,7 @@
 
 @section('content')
 <h2>{{$name}}</h2>    
-<p>This is my body content.</p>
+<p>This is my body content...</p>
 <h2>If Statement</h2>
 @if ($day == 'Friday')
     <p>Time to party</p>

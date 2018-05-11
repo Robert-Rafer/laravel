@@ -40,6 +40,7 @@
             <div class="content">
                 <div class="title">Laravel 5</div>
                 <h1>Sample</h1>
+                
             </div>
         </div>
         

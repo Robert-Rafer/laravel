@@ -17,6 +17,8 @@ class Employees extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('contact_number');
+            $table->unsignedInteger('dept_id');
+            $table->foreign('dept_id')->references('id')->on('depts')->onDelete('cascade');
             $table->timestamps();       
         });
 
@@ -41,5 +43,6 @@ class Employees extends Migration
     public function down()
     {
         Schema::drop('employees');
+       
     }
 }
